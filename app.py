@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load the TFLite model and allocate tensors
-interpreter = tf.lite.Interpreter(model_path='tflite_qaware_model.tflite')
+interpreter = tf.lite.Interpreter(model_path='tflite_qaware_model_97.tflite')
 interpreter.allocate_tensors()
 
 # Get input and output tensors
